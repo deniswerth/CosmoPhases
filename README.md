@@ -12,4 +12,22 @@ Cosmological phase transitions &amp; Higgs Triplet Model
 | **Version:**  | 1.0|
 | **Homepage:**  | [https://github.com/deniswerth/CosmoPhases](https://github.com/deniswerth/CosmoPhases)|
 
+## Introduction
+Some introduction
+
+The paper can be found here: 
+
+## The Model
+Add effective potential TeX file in repository and explain the main results.
+
+## Usage
+Short intro to explain what can be done with the code with some examples. Go through each file and explain their use in __Main__.py
+
+### Effective potential in `potential.py`
+(Say that CosmoTransitions has been changed to allow on-shell renormalization and factorial from scipy.special)
+
+### Phase transition study in `phase_transition.py`
+Add functions
+
+
 
