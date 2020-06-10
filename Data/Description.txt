@@ -1,0 +1,3 @@
+Number of points : 11345
+LambdaDelta      : 1
+Distribution     : Evenly spaced points in parallelogram 
