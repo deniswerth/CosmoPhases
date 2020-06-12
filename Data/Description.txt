@@ -1,4 +1,7 @@
 The scan was performed in two regions (II and III according to regions.pdf). 
+The tree-level potential is shown in both regions : 
+  -Tree_level_potential_II.pdf for (mDelta, kappa, LambdaDelta) = (400, 5.3, 0.1)
+  -Tree_level_potential_III.pdf for (mDelta, kappa, LambdaDelta) = (600, 6, 0.1)
 
 The points in region II are presented in the RegionII file with :
   -One-step first-order data (mDelta, kappa, History)
