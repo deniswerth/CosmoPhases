@@ -1,3 +1,11 @@
-Number of points : 11345
-LambdaDelta      : 1
-Distribution     : Evenly spaced points in parallelogram as shown in Data.pdf
+The scan was performed in two regions (II and III according to regions.pdf). 
+
+The points in region II are presented in the RegionII file with :
+  -One-step first-order data (mDelta, kappa, History)
+  -Two-step first-order data (mDelta, kappa, History)
+  -Two-step second-order data (mDelta, kappa)
+
+
+LambdaDelta      : 0.1
+Distribution     : Evenly spaced points in parallelogram
+History          : Each phase transition is an array with [Tcrit, high_vev, low_vev, transtype, Delta_rho]
