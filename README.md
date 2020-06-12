@@ -15,8 +15,6 @@ Cosmological phase transitions &amp; Higgs Triplet Model
 ## Introduction
 Some introduction
 
-The paper can be found here: 
-
 ## The Model
 Add effective potential TeX file in repository and explain the main results.
 
