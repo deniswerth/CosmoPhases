@@ -12,6 +12,9 @@ The points in region II are presented in the RegionII file with :
 The points in region III are presented in the RegionIII file with :
   -One-step first-order data (mDelta, kappa, History)
   -One-step second-order data (mDelta, kappa)
+  
+For the one-step first-order phase transition region, the computed velocity, 
+bubble wall profile and nucleation temperature are presented in the Velocities file.
 
 
 LambdaDelta      : 0.1
