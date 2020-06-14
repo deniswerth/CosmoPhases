@@ -19,13 +19,17 @@ Some introduction
 Add effective potential TeX file in repository and explain the main results.
 
 ## Usage
-Short intro to explain what can be done with the code with some examples. Go through each file and explain their use in __Main__.py
+Short intro to explain what can be done with the code with some examples. Go through each file and explain their use with a few line of code.
 
 ### Effective potential in `potential.py`
 (Say that CosmoTransitions has been changed to allow on-shell renormalization and factorial from scipy.special)
 
 ### Phase transition study in `phase_transition.py`
-Add functions
+Study the phase transition for a given point in the parameter space.
+
+### Phase diagram study in `phase_diagram.py`
+Perform a scan.
+
 
 
 
