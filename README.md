@@ -28,10 +28,35 @@ from potential import Finite_Temperature_Potential
 mDelta, LambdaDelta, kappa = 700, 0.1, 10
 FTP = Finite_Temperature_Potential(mDelta, LambdaDelta, kappa)
 ```
+
 We note that CosmoTransitions has been changed to allow on-shell renormalization. The modified CosmoTransitions code can be found in the CosmoTransitions file.
 
 ### Phase transition study in `phase_transition.py`
-Study the phase transition for a given point in the parameter space.
+This code enables to study the phase transition for a given point in the parameter space. The full effective potential can plotted with
+
+```python
+from phase_transition import Phase_Transition
+PT = Phase_Transition(mDelta = 700, LambdaDelta = 0.1, kappa = 10)
+PT.plot_potential()
+```
+
+then chose a temperature T and the number of dimensions for plotting (1 or 2) directly in the kernal. The order parameter can be plotted as a function of the temperature with
+
+```python
+from phase_transition import Phase_Transition
+PT = Phase_Transition(mDelta = 400, LambdaDelta = 0.1, kappa = 4.5)
+PT.plot_phase_transition()
+```
+
+The phase transition history is computed with
+
+```python
+from phase_transition import Phase_Transition
+PT = Phase_Transition(mDelta = 500, LambdaDelta = 0.1, kappa = 7.5)
+print(PT.phase_transition_critical())
+```
+
+Note that these few lines are just examples and the reader is invited to explore the code by himself.
 
 ### Phase diagram study in `phase_diagram.py`
 Perform a scan.
