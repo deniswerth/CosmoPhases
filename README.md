@@ -81,5 +81,6 @@ vw, phi0, Tn, Lw, DeltaV = bwv.velocity()
 print(Lw, Tn, phi0, vw, DeltaV)
 ```
 
+Gauge bosons are treated either classically, at the fluid equation level or are omitted. This can be directly changed in `bubble_wall_velocity.py` line 52.
 
 
