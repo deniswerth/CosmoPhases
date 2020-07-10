@@ -59,9 +59,27 @@ print(PT.phase_transition_critical())
 Note that these few lines are just examples and the reader is invited to explore the code by himself.
 
 ### Phase diagram study in `phase_diagram.py`
-Perform a scan.
+
+This code enables to scan the parameter space in the mDelta-kappa plane for a fixed value of LambdaDelta. An example of such a run is
+
+
+```python
+from phase_diagram import scan
+S = scan(LambdaDelta, save_paths)
+X, Y = S.defining_scan_points(type = "parallelogram")
+mDelta, kappa, History = S.run(X, Y)
+```
 
 ### Bubble wall velocity in `bubble_wall_velocity.py`
+
+This code computes the bubble wall velocity for a given point in the parameter space. An example of use is
+
+```python
+from bubble_wall_velocity import bubble_wall_velocity
+bwv = bubble_wall_velocity(mDelta = 700, kappa = 10, LambdaDelta = 0.1)
+vw, phi0, Tn, Lw, DeltaV = bwv.velocity()
+print(Lw, Tn, phi0, vw, DeltaV)
+```
 
 
 
