@@ -18,10 +18,17 @@ This Python code was written to answer the question whether the Higgs triplet mo
 Further details including the model can be found on [ArXiV](https://github.com/deniswerth/CosmoPhases).
 
 ## Usage
-Short intro to explain what can be done with the code with some examples. Go through each file and explain their use with a few line of code.
+Our model has three free parameters: mDelta (Higgs triplet mass), kappa (portal coupling constant), and LambdaDelta (triplet quartic coupling constant). Every code is written as a class with mDelta, kappa and LambdaDelta as inputs. In what follows, we go through each code and explain how one can use them with just a few lines of code.
 
 ### Effective potential in `potential.py`
-(Say that CosmoTransitions has been changed to allow on-shell renormalization and factorial from scipy.special)
+In this code, the full effective potential (tree-level potential, Coleman-Weinberg potential using the on-shell renormalization scheme, one-loop thermal potential, thermal mass corrections) is implemented. The full effective potential can be imported in a seperate file with
+
+```python
+from potential import Finite_Temperature_Potential
+mDelta, LambdaDelta, kappa = 700, 0.1, 10
+FTP = Finite_Temperature_Potential(mDelta, LambdaDelta, kappa)
+```
+We note that CosmoTransitions has been changed to allow on-shell renormalization. The modified CosmoTransitions code can be found in the CosmoTransitions file.
 
 ### Phase transition study in `phase_transition.py`
 Study the phase transition for a given point in the parameter space.
